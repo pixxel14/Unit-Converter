@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Engineers unit converter using Javascript - bootstrapfriendly</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/convert.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <div class="col-md-6 pt-5">
+                    <div class="row pt-5 converter-wrapper">
+
+                        <div class="col-md-12 pb-3">
+
+                            <form name="property_form">
+                                <span>
+                                    <select class="select-property form-control" name="the_menu" size=1
+                                        onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+                                    </select>
+                                </span>
+                            </form>
+
+                        </div>
+
+                        <div class="col-md-12">
+
+                            <div class="converter-side-a">
+                                <form name="form_A" onSubmit="return false">
+                                    <input type="text" class="numbersonly form-control" name="unit_input" maxlength="20"
+                                        value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+                                    <span>
+                                        <select name="unit_menu"
+                                            onChange="CalculateUnit(document.form_B, document.form_A)"
+                                            class="form-control">
+                                        </select>
+                                    </span>
+                                </form>
+                            </div> <!-- /converter-side-a -->
+
+                            <div class="converter-equals">
+                                <p>=</p>
+                            </div> <!-- /converter-side-a -->
+
+                            <div class="converter-side-b">
+                                <form name="form_B" onSubmit="return false">
+                                    <input type="text" class="numbersonly form-control" name="unit_input" maxlength="20"
+                                        value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+                                    <span>
+                                        <select name="unit_menu"
+                                            onChange="CalculateUnit(document.form_A, document.form_B)"
+                                            class="form-control">
+                                        </select>
+                                    </span>
+                                </form>
+                            </div> <!-- /converter-side-b -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-4">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1190033123418031"
+                    crossorigin="anonymous"></script>
+                <!-- live_demo_page -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1190033123418031"
+                    data-ad-slot="5335471635" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
